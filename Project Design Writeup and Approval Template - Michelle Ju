@@ -1,0 +1,97 @@
+Project Design Writeup and Approval Template - Michelle Ju
+Follow this as a guide to completing the project design writeup. The questions for each section are merely there to suggest what the baseline should cover; be sure to use detail as it will make the project much easier to approach as the class moves on.
+
+Project Problem and Hypothesis
+
+What's the project about? What problem are you solving?
+  The project is designed to predict the outcome of pets that are admitted into animal shelters based on breed, sex, color, and age.
+  The problem is to determine which types of pets have worse outcomes to provide animal shelters insight to focus
+  their energy on certain types of pets that need extra help finding a new home. The outcomes include: Adoption,
+  Died, Euthanasia, Return to Owner, and Transfer.
+Where does this seem to reside as a machine learning problem? Are you predicting some continuous number, or predicting a binary value? Binary value
+What kind of impact do you think it could have?
+  I think it would help animal shelters improve and boost efforts to save the lives of pets with
+  certain characteristics that don't have as high of a chance for adoption.
+  What do you think will have the most impact in predicting the value you are interested in solving for? Determining which breeds
+  are "least popular" and proposing 'business case' models for animal shelters to sweeten the deal of these animals and also experience
+  financial gains by having these animals find forever homes.
+
+Datasets
+
+Description of data set available, at the field level (see table)
+
+  The data comes from Austin Animal Center from October 1st, 2013 to March, 2016. Outcomes represent the status of animals as they leave the Animal Center. All animals receive a unique Animal ID during intake.
+  In this competition, you are going to predict the outcome of the animal as they leave the Animal Center. These outcomes include: Adoption, Died, Euthanasia, Return to owner, and Transfer.
+  The train and test data are randomly split.
+
+If from an API, include a sample return (this is usually included in API documentation!) (if doing this in markdown, use the javacription code tag)
+N/A
+
+Domain knowledge
+
+What experience do you already have around this area?
+  I don't have experience in this area in particular but I do have a dog and my sister had owned five dogs in the past five years and had eventually "given them back" or found a
+  new owner to adopt the dog due to her inability to take care of them. Animal welfare is an area of tremendous concern for me.
+Does it relate or help inform the project in any way? To some degree
+What other research efforts exist?
+  Yes, there has been a Master's Dissertation called "Animal Shelter Dogs: Factors Predicting Adoption Versus Euthanasia" written by Jamie L. DeLeeuw. The dissertation
+  looks into various statistical analyses and a histogram that incorporates Owner Issues, Pet Health, and Pet Behavior.
+  Also, on PubMed.gov, there is a retrospective cohort study called "Prediction of adoption versus euthanasia among dogs and cats in a California animal shelter." It has been conducted
+  to investigate determinants of adoption of cats and dogs from a large municipal shelter.
+
+
+Project Concerns
+
+What questions do you have about your project? What are you not sure you quite yet understand? (The more honest you are about this, the easier your instructors can help).
+  There are three types of data: sample submission file in the correct format, a training set, and a test set. I'd like to better
+  understand what types of visualizations would best represent the data I have. Also - is the training data a form of a test
+  or is it a modeling of the data? I'm a little fuzzy on that.
+What are the assumptions and caveats to the problem?
+  The caveats I have are whether the pets had been adopted or purchased from a breeder prior to being put up for adoption;
+  typically, pets purchased at breeders are of "high demand" whereas, dogs at adoption centers are seen as slightly less desirable.
+
+What data do you not have access to but wish you had?
+  I wish I had access to the owners aligned to the pets - their income, marital status, urban/rural, access to animal hospitals
+  and pet care and grooming. I also wish I had access to "animal behavior" as that was analyzed in the dissertation above.
+  Additionally, I wish I had access to whether there were other domesticated animals in the homes the dogs were adopted to (which could impact how they
+  coalesce/adopt to new home environments). For example, if a dog is adopted into a home with cats, that may not bode well.
+
+What is already implied about the observations in your data set? For example, if your primary data set is twitter data, it may not be representative of the whole sample (say, predicting who would win an election)
+  The pets are only dogs (no cats, birds, amphibians, fish, or other mammals)
+
+What are the risks to the project?
+  The reliability of the data - because the data comes from Austin Animal Shelter in Austin, TX, the data may not accurately
+  represent the animals of all shelters in the United States.
+
+What's the cost of your model being wrong? (What's the benefit of your model being right?)
+  I'm not sure, but the benefits of the model would be probably in the thousands if not millions, since it is costly to keep animals, euthanize them,
+  and so forth.
+
+Is any of the data incorrect? Could it be incorrect?
+  To be determined.
+
+
+Outcomes
+
+What do you expect the output to look like?
+  The outcome would most likely reveal that small to medium sized dogs, purebred dogs, and healthy dogs are typically returned the least.
+  The most euthanized or returned pets are probably medium to large sized dogs, dogs that have been through prior foster homes, and unhealthy dogs.
+
+What does your target audience expect the output to look like?
+  Probably what I predicted above.
+
+What gain do you expect from your most important feature on its own?
+  Animal shelter maintenance savings, decrease in animal Euthanization, and increase in animals finding forever homes and
+  living healthy, long lives. Also, an indirect decrease in animal hospitalization, neglect, and fallout for animals
+  with less fortunate outcomes.
+
+How complicated does your model have to be?
+  Not terribly complicated - probably just a comparison of the various factors of the pets.
+
+How successful does your project have to be in order to be considered a "success"?
+  To have a predictable model that can be used to visualize the attributes of dogs, the "successful adoption" rate of those
+  dogs, and have a high enough accuracy to predict "successful adoption" in animal shelters in other areas.
+
+What will you do if the project is a bust (this happens! but it shouldn't here)?
+  I will incorporate additional amounts of data from other animal shelters in other cities (both rural, suburban, and urban) and also
+  analyze features of the owners themselves. I will also analyze animal behavior as a subset to predict the outcomes of these animals.
